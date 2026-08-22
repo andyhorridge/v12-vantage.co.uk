@@ -9,30 +9,28 @@
         content="width=device-width, initial-scale=1.0, viewport-fit=cover"
     >
 
-    <title>Aston Martin V12 Vantage | YJ60 ASO</title>
+    <title>Aston Martin V12 Vantage | F2 DFH</title>
 
     <meta
         name="description"
-        content="Aston Martin V12 Vantage YJ60 ASO – a personal archive documenting the car, its history, specification and photographs."
+        content="Aston Martin V12 Vantage F2 DFH – a personal archive documenting the car, its history, specification and photographs."
     >
 
     <meta name="theme-color" content="#0b0c0c">
 
 
-    <!-- =====================================================
-         WHATSAPP / IMESSAGE / FACEBOOK / SOCIAL PREVIEW
-         ===================================================== -->
+    <!-- SOCIAL SHARING -->
 
     <meta property="og:type" content="website">
 
     <meta
         property="og:title"
-        content="Aston Martin V12 Vantage | YJ60 ASO"
+        content="Aston Martin V12 Vantage | F2 DFH"
     >
 
     <meta
         property="og:description"
-        content="A personal archive of Aston Martin V12 Vantage YJ60 ASO."
+        content="A personal archive of an Aston Martin V12 Vantage."
     >
 
     <meta
@@ -61,7 +59,7 @@
     >
 
 
-    <!-- Twitter / X -->
+    <!-- TWITTER / X -->
 
     <meta
         name="twitter:card"
@@ -70,12 +68,12 @@
 
     <meta
         name="twitter:title"
-        content="Aston Martin V12 Vantage | YJ60 ASO"
+        content="Aston Martin V12 Vantage | F2 DFH"
     >
 
     <meta
         name="twitter:description"
-        content="A personal archive of Aston Martin V12 Vantage YJ60 ASO."
+        content="A personal archive of an Aston Martin V12 Vantage."
     >
 
     <meta
@@ -84,9 +82,7 @@
     >
 
 
-    <!-- =====================================================
-         IPHONE / BOOKMARK ICONS
-         ===================================================== -->
+    <!-- IPHONE / BOOKMARK -->
 
     <link
         rel="apple-touch-icon"
@@ -111,16 +107,13 @@
             box-sizing: border-box;
         }
 
-
         html {
             scroll-behavior: smooth;
         }
 
-
         body {
             margin: 0;
             padding: 0;
-
             background: #0b0c0c;
             color: #f5f5f5;
 
@@ -135,12 +128,14 @@
             line-height: 1.6;
         }
 
+        body.no-scroll {
+            overflow: hidden;
+        }
 
         img {
             max-width: 100%;
             display: block;
         }
-
 
         a {
             color: inherit;
@@ -148,18 +143,15 @@
         }
 
 
-        /* =====================================================
+        /* =============================================
            NAVIGATION
-           ===================================================== */
+           ============================================= */
 
         .navbar {
-
             position: absolute;
             top: 0;
             left: 0;
-
             width: 100%;
-
             z-index: 20;
 
             padding:
@@ -174,91 +166,63 @@
             background:
                 linear-gradient(
                     to bottom,
-                    rgba(0,0,0,0.72),
+                    rgba(0,0,0,0.75),
                     rgba(0,0,0,0)
                 );
         }
 
-
         .brand {
-
             font-size: 16px;
-
             font-weight: 600;
-
             letter-spacing: 3px;
-
             text-transform: uppercase;
         }
-
 
         .nav-links {
-
             display: flex;
-
             gap: 26px;
-
             font-size: 12px;
-
             letter-spacing: 2px;
-
             text-transform: uppercase;
         }
 
-
         .nav-links a {
-
             opacity: 0.8;
-
             transition: opacity 0.2s;
         }
-
 
         .nav-links a:hover {
             opacity: 1;
         }
 
 
-
-        /* =====================================================
+        /* =============================================
            HERO
-           ===================================================== */
+           ============================================= */
 
         .hero {
-
             min-height: 100svh;
-
             position: relative;
-
             display: flex;
-
             align-items: flex-end;
 
             background-image:
-
                 linear-gradient(
                     to bottom,
                     rgba(0,0,0,0.04) 20%,
                     rgba(0,0,0,0.12) 50%,
                     rgba(0,0,0,0.88) 100%
                 ),
-
                 url("hero.jpg?v=2");
 
             background-size: cover;
-
             background-position: center;
-
             background-repeat: no-repeat;
         }
 
-
         .hero-content {
-
             width: 100%;
-
             max-width: 1250px;
-
             margin: 0 auto;
 
             padding:
@@ -267,25 +231,16 @@
                 calc(70px + env(safe-area-inset-bottom));
         }
 
-
         .hero-small {
-
             margin-bottom: 3px;
-
             font-size: 15px;
-
             font-weight: 400;
-
             letter-spacing: 5px;
-
             text-transform: uppercase;
-
             color: rgba(255,255,255,0.82);
         }
 
-
         .hero h1 {
-
             margin: 0;
 
             font-size: clamp(
@@ -295,64 +250,41 @@
             );
 
             line-height: 0.92;
-
             font-weight: 300;
-
             letter-spacing: 2px;
         }
 
-
         .hero-registration {
-
             margin-top: 18px;
-
             font-size: 17px;
-
             letter-spacing: 6px;
-
             text-transform: uppercase;
-
             color: rgba(255,255,255,0.85);
         }
 
 
-
-        /* =====================================================
-           INTRO
-           ===================================================== */
+        /* =============================================
+           INTRODUCTION
+           ============================================= */
 
         .intro {
-
             max-width: 850px;
-
             margin: 0 auto;
-
             padding: 110px 30px;
-
             text-align: center;
         }
 
-
-        .intro-label {
-
-            color: #aaa;
-
+        .intro-label,
+        .section-label {
+            color: #929292;
             font-size: 12px;
-
             letter-spacing: 4px;
-
             text-transform: uppercase;
-
-            margin-bottom: 22px;
+            margin-bottom: 18px;
         }
 
-
         .intro h2 {
-
-            margin:
-                0
-                0
-                28px;
+            margin: 0 0 28px;
 
             font-size: clamp(
                 32px,
@@ -361,66 +293,34 @@
             );
 
             line-height: 1.08;
-
             font-weight: 300;
         }
 
-
         .intro p {
-
             max-width: 720px;
-
             margin: 0 auto;
-
             font-size: 17px;
-
             line-height: 1.9;
-
             color: #b8b8b8;
         }
 
 
-
-        /* =====================================================
+        /* =============================================
            THE CAR
-           ===================================================== */
+           ============================================= */
 
         .car-section {
-
             background: #111313;
-
             padding: 110px 30px;
         }
 
-
         .section-inner {
-
             max-width: 1180px;
-
             margin: auto;
         }
 
-
-        .section-label {
-
-            color: #8e8e8e;
-
-            font-size: 12px;
-
-            letter-spacing: 4px;
-
-            text-transform: uppercase;
-
-            margin-bottom: 18px;
-        }
-
-
         .section-title {
-
-            margin:
-                0
-                0
-                30px;
+            margin: 0 0 30px;
 
             font-size: clamp(
                 35px,
@@ -429,180 +329,205 @@
             );
 
             font-weight: 300;
-
             line-height: 1.08;
         }
 
-
         .car-text {
-
             max-width: 800px;
-
             font-size: 17px;
-
             line-height: 1.9;
-
             color: #b6b6b6;
         }
 
 
+        /* =============================================
+           SPECIFICATION
+           ============================================= */
 
-        /* =====================================================
-           CARDS
-           ===================================================== */
-
-        .cards-section {
-
-            padding: 110px 30px;
-
+        .spec-section {
+            padding: 100px 30px;
             background: #090a0a;
         }
 
-
-        .cards {
-
-            max-width: 1180px;
-
-            margin: auto;
-
+        .spec-grid {
             display: grid;
-
-            grid-template-columns:
-                repeat(4, 1fr);
-
-            gap: 14px;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+            margin-top: 45px;
+            background: rgba(255,255,255,0.08);
         }
 
-
-        .card {
-
-            min-height: 300px;
-
-            padding: 32px;
-
-            background:
-                linear-gradient(
-                    145deg,
-                    #171919,
-                    #101111
-                );
-
-            border:
-                1px solid
-                rgba(255,255,255,0.07);
-
-            display: flex;
-
-            flex-direction: column;
-
-            justify-content: flex-end;
-
-            transition:
-                transform 0.25s ease,
-                border-color 0.25s ease;
+        .spec-item {
+            background: #111313;
+            padding: 32px 25px;
         }
 
-
-        .card:hover {
-
-            transform:
-                translateY(-4px);
-
-            border-color:
-                rgba(255,255,255,0.18);
-        }
-
-
-        .card-number {
-
-            font-size: 11px;
-
-            letter-spacing: 3px;
-
+        .spec-name {
             color: #777;
-
-            margin-bottom: 12px;
+            font-size: 11px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
         }
 
-
-        .card-title {
-
-            font-size: 26px;
-
+        .spec-value {
+            font-size: 22px;
             font-weight: 300;
-
-            margin-bottom: 9px;
         }
 
 
-        .card-text {
+        /* =============================================
+           HISTORY / GALLERY
+           ============================================= */
 
-            color: #888;
-
-            font-size: 14px;
-        }
-
-
-
-        /* =====================================================
-           ARCHIVE
-           ===================================================== */
-
-        .archive {
-
-            padding: 130px 30px;
-
-            text-align: center;
-
+        .history-section {
+            padding: 110px 30px;
             background: #111313;
         }
 
+        .history-section:nth-child(even) {
+            background: #0b0c0c;
+        }
 
-        .archive h2 {
+        .history-header {
+            max-width: 1180px;
+            margin: 0 auto 45px;
+        }
 
-            margin:
-                0
-                0
-                20px;
+        .history-date {
+            color: #8c8c8c;
+            font-size: 12px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
 
-            font-size: clamp(
-                34px,
-                5vw,
-                55px
-            );
-
+        .history-title {
+            margin: 0 0 15px;
+            font-size: clamp(30px, 4vw, 48px);
             font-weight: 300;
+            line-height: 1.1;
         }
 
-
-        .archive p {
-
-            max-width: 600px;
-
-            margin: auto;
-
-            color: #929292;
-
+        .history-text {
+            max-width: 700px;
+            color: #9d9d9d;
             font-size: 16px;
+            line-height: 1.8;
         }
 
 
+        /* =============================================
+           PHOTO GRID
+           ============================================= */
 
-        /* =====================================================
-           FOOTER
-           ===================================================== */
+        .gallery-grid {
+            max-width: 1180px;
+            margin: 0 auto;
 
-        footer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 12px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            background: #171818;
+            cursor: pointer;
+            aspect-ratio: 4 / 3;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            transition:
+                transform 0.4s ease,
+                opacity 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.025);
+            opacity: 0.92;
+        }
+
+
+        /* =============================================
+           LIGHTBOX
+           ============================================= */
+
+        .lightbox {
+            display: none;
+
+            position: fixed;
+            z-index: 9999;
+
+            top: 0;
+            left: 0;
+
+            width: 100%;
+            height: 100%;
+
+            background: rgba(0,0,0,0.96);
+
+            align-items: center;
+            justify-content: center;
 
             padding:
-                45px
+                calc(60px + env(safe-area-inset-top))
+                20px
+                calc(40px + env(safe-area-inset-bottom));
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 96vw;
+            max-height: 88vh;
+            width: auto;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .lightbox-close {
+            position: absolute;
+
+            top:
+                calc(
+                    15px +
+                    env(safe-area-inset-top)
+                );
+
+            right: 22px;
+
+            border: 0;
+            background: none;
+            color: white;
+
+            font-size: 40px;
+            font-weight: 200;
+            line-height: 1;
+
+            cursor: pointer;
+        }
+
+
+        /* =============================================
+           FOOTER
+           ============================================= */
+
+        footer {
+            padding:
+                55px
                 30px
-                calc(45px + env(safe-area-inset-bottom));
+                calc(55px + env(safe-area-inset-bottom));
 
             text-align: center;
-
             color: #666;
-
             background: #080909;
 
             border-top:
@@ -610,143 +535,107 @@
                 rgba(255,255,255,0.05);
 
             font-size: 12px;
-
             letter-spacing: 2px;
-
             text-transform: uppercase;
         }
 
 
-
-        /* =====================================================
+        /* =============================================
            TABLET
-           ===================================================== */
+           ============================================= */
 
-        @media
-        (max-width: 900px) {
+        @media (max-width: 900px) {
 
-            .cards {
+            .spec-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
 
-                grid-template-columns:
-                    repeat(2, 1fr);
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
 
         }
 
 
-
-        /* =====================================================
+        /* =============================================
            MOBILE
-           ===================================================== */
+           ============================================= */
 
-        @media
-        (max-width: 600px) {
-
+        @media (max-width: 600px) {
 
             .navbar {
-
                 padding-left: 18px;
-
                 padding-right: 18px;
             }
 
-
             .brand {
-
                 font-size: 13px;
-
                 letter-spacing: 2px;
             }
 
-
             .nav-links {
-
                 display: none;
             }
 
-
             .hero {
-
                 min-height: 100svh;
-
-                background-position:
-                    43% center;
+                background-position: 43% center;
             }
-
 
             .hero-content {
-
                 padding:
-
                     80px
                     22px
-                    calc(
-                        50px +
-                        env(safe-area-inset-bottom)
-                    );
+                    calc(50px + env(safe-area-inset-bottom));
             }
 
-
             .hero-small {
-
                 font-size: 12px;
-
                 letter-spacing: 4px;
             }
 
-
             .hero-registration {
-
                 font-size: 14px;
-
                 letter-spacing: 5px;
             }
 
-
             .intro {
-
-                padding:
-                    80px
-                    22px;
+                padding: 80px 22px;
             }
 
-
-            .car-section {
-
-                padding:
-                    80px
-                    22px;
+            .car-section,
+            .spec-section {
+                padding: 80px 22px;
             }
 
-
-            .cards-section {
-
-                padding:
-                    70px
-                    18px;
+            .history-section {
+                padding: 80px 15px;
             }
 
-
-            .cards {
-
-                grid-template-columns:
-                    1fr;
-
-                gap: 12px;
+            .history-header {
+                padding: 0 7px;
+                margin-bottom: 30px;
             }
 
-
-            .card {
-
-                min-height: 215px;
+            .spec-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
 
+            .spec-item {
+                padding: 24px 17px;
+            }
 
-            .archive {
+            .spec-value {
+                font-size: 18px;
+            }
 
-                padding:
-                    90px
-                    22px;
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 5px;
+            }
+
+            .gallery-item {
+                aspect-ratio: 1 / 1;
             }
 
         }
@@ -756,23 +645,16 @@
 </head>
 
 
-
 <body>
 
 
-    <!-- =====================================================
-         NAVIGATION
-         ===================================================== -->
+    <!-- NAVIGATION -->
 
     <nav class="navbar">
 
-        <a
-            href="#top"
-            class="brand"
-        >
+        <a href="#top" class="brand">
             V12 Vantage
         </a>
-
 
         <div class="nav-links">
 
@@ -797,10 +679,7 @@
     </nav>
 
 
-
-    <!-- =====================================================
-         HERO
-         ===================================================== -->
+    <!-- HERO -->
 
     <header
         class="hero"
@@ -813,15 +692,13 @@
                 Aston Martin
             </div>
 
-
             <h1>
                 V12<br>
                 VANTAGE
             </h1>
 
-
             <div class="hero-registration">
-                YJ60 ASO
+                F2 DFH
             </div>
 
         </div>
@@ -829,10 +706,7 @@
     </header>
 
 
-
-    <!-- =====================================================
-         INTRODUCTION
-         ===================================================== -->
+    <!-- INTRO -->
 
     <section class="intro">
 
@@ -840,25 +714,20 @@
             Aston Martin
         </div>
 
-
         <h2>
             A modern British classic.
         </h2>
 
-
         <p>
             A personal archive dedicated to the Aston Martin
             V12 Vantage — documenting the car, its history,
-            specification and photographs over the years.
+            specification and photographs through the years.
         </p>
 
     </section>
 
 
-
-    <!-- =====================================================
-         THE CAR
-         ===================================================== -->
+    <!-- THE CAR -->
 
     <section
         class="car-section"
@@ -871,25 +740,29 @@
                 The Car
             </div>
 
-
             <h2 class="section-title">
                 Aston Martin V12 Vantage
             </h2>
 
-
             <div class="car-text">
 
-                Combining Aston Martin's compact Vantage
-                body with its naturally aspirated V12,
-                the V12 Vantage is one of the most
-                distinctive road cars of its era.
+                The V12 Vantage combines Aston Martin's
+                compact Vantage body with the company's
+                naturally aspirated 6.0-litre V12.
 
                 <br><br>
 
-                This website is being created as a permanent
-                record of YJ60 ASO, bringing together its
-                photographs, history and specification in
-                one place.
+                With a six-speed manual gearbox, rear-wheel
+                drive and carbon ceramic brakes, it represents
+                one of the most distinctive driver's cars
+                produced by Aston Martin.
+
+                <br><br>
+
+                This website records the history of this
+                particular V12 Vantage from the day it joined
+                the family in August 2015 through its later
+                maintenance, upgrades and detailing.
 
             </div>
 
@@ -898,146 +771,605 @@
     </section>
 
 
+    <!-- SPECIFICATION -->
 
-    <!-- =====================================================
-         SECTIONS
-         ===================================================== -->
+    <section
+        class="spec-section"
+        id="specification"
+    >
 
-    <section class="cards-section">
+        <div class="section-inner">
 
-        <div class="cards">
+            <div class="section-label">
+                Specification
+            </div>
 
+            <h2 class="section-title">
+                V12 Vantage
+            </h2>
 
-            <div
-                class="card"
-                id="car-details"
-            >
+            <div class="spec-grid">
 
-                <div class="card-number">
-                    01
+                <div class="spec-item">
+
+                    <div class="spec-name">
+                        Engine
+                    </div>
+
+                    <div class="spec-value">
+                        6.0-litre V12
+                    </div>
+
                 </div>
 
-                <div class="card-title">
-                    The Car
+
+                <div class="spec-item">
+
+                    <div class="spec-name">
+                        Transmission
+                    </div>
+
+                    <div class="spec-value">
+                        6-speed manual
+                    </div>
+
                 </div>
 
-                <div class="card-text">
-                    Details and information about
-                    YJ60 ASO.
+
+                <div class="spec-item">
+
+                    <div class="spec-name">
+                        Drive
+                    </div>
+
+                    <div class="spec-value">
+                        Rear-wheel drive
+                    </div>
+
+                </div>
+
+
+                <div class="spec-item">
+
+                    <div class="spec-name">
+                        Brakes
+                    </div>
+
+                    <div class="spec-value">
+                        Carbon ceramic
+                    </div>
+
                 </div>
 
             </div>
-
-
-
-            <div
-                class="card"
-                id="history"
-            >
-
-                <div class="card-number">
-                    02
-                </div>
-
-                <div class="card-title">
-                    History
-                </div>
-
-                <div class="card-text">
-                    The story and history of the car.
-                </div>
-
-            </div>
-
-
-
-            <div
-                class="card"
-                id="gallery"
-            >
-
-                <div class="card-number">
-                    03
-                </div>
-
-                <div class="card-title">
-                    Gallery
-                </div>
-
-                <div class="card-text">
-                    Photographs documenting the
-                    V12 Vantage.
-                </div>
-
-            </div>
-
-
-
-            <div
-                class="card"
-                id="specification"
-            >
-
-                <div class="card-number">
-                    04
-                </div>
-
-                <div class="card-title">
-                    Specification
-                </div>
-
-                <div class="card-text">
-                    Factory specification and
-                    vehicle details.
-                </div>
-
-            </div>
-
 
         </div>
 
     </section>
 
 
+    <!-- HISTORY -->
 
-    <!-- =====================================================
-         ARCHIVE
-         ===================================================== -->
-
-    <section class="archive">
-
-        <div class="section-label">
-            YJ60 ASO
-        </div>
+    <div id="history">
 
 
-        <h2>
-            Full archive coming soon.
-        </h2>
+        <!-- AUGUST 2015 -->
+
+        <section class="history-section">
+
+            <div class="history-header">
+
+                <div class="history-date">
+                    August 2015
+                </div>
+
+                <h2 class="history-title">
+                    The Day the Car Was Bought
+                </h2>
+
+                <div class="history-text">
+                    The beginning of the story. The V12 Vantage
+                    on the day it was bought in August 2015,
+                    still wearing its original YJ60 ASO
+                    registration.
+                </div>
+
+            </div>
+
+            <div
+                class="gallery-grid"
+                id="gallery-2015"
+            ></div>
+
+        </section>
 
 
-        <p>
-            More photographs, history and information
-            about the car will be added to the site.
-        </p>
+        <!-- APRIL 2021 -->
 
-    </section>
+        <section class="history-section">
+
+            <div class="history-header">
+
+                <div class="history-date">
+                    April 2021
+                </div>
+
+                <h2 class="history-title">
+                    Bamford Rose Stainless-Steel Manifold
+                </h2>
+
+                <div class="history-text">
+                    A Bamford Rose stainless-steel manifold
+                    upgrade for the naturally aspirated
+                    6.0-litre V12.
+                </div>
+
+            </div>
+
+            <div
+                class="gallery-grid"
+                id="gallery-2021"
+            ></div>
+
+        </section>
 
 
+        <!-- THROUGH THE YEARS -->
 
-    <!-- =====================================================
-         FOOTER
-         ===================================================== -->
+        <section class="history-section">
+
+            <div class="history-header">
+
+                <div class="history-date">
+                    Through the Years
+                </div>
+
+                <h2 class="history-title">
+                    Life With the V12 Vantage
+                </h2>
+
+                <div class="history-text">
+                    Photographs from the car's history,
+                    documenting the Vantage through the
+                    years.
+                </div>
+
+            </div>
+
+            <div
+                class="gallery-grid"
+                id="gallery-years"
+            ></div>
+
+        </section>
+
+
+        <!-- DETAILING -->
+
+        <section
+            class="history-section"
+            id="gallery"
+        >
+
+            <div class="history-header">
+
+                <div class="history-date">
+                    Care &amp; Detailing
+                </div>
+
+                <h2 class="history-title">
+                    V12 Vantage Detailed
+                </h2>
+
+                <div class="history-text">
+                    A closer look at the Vantage, including
+                    its bodywork, interior, engine bay and
+                    carbon-ceramic braking system.
+                </div>
+
+            </div>
+
+            <div
+                class="gallery-grid"
+                id="gallery-detailing"
+            ></div>
+
+        </section>
+
+
+    </div>
+
+
+    <!-- LIGHTBOX -->
+
+    <div
+        class="lightbox"
+        id="lightbox"
+        aria-hidden="true"
+    >
+
+        <button
+            class="lightbox-close"
+            id="lightbox-close"
+            aria-label="Close photograph"
+        >
+            &times;
+        </button>
+
+        <img
+            id="lightbox-image"
+            src=""
+            alt="Aston Martin V12 Vantage"
+        >
+
+    </div>
+
+
+    <!-- FOOTER -->
 
     <footer>
 
         Aston Martin V12 Vantage
         &nbsp; • &nbsp;
-        YJ60 ASO
+        F2 DFH
         &nbsp; • &nbsp;
         v12-vantage.co.uk
 
     </footer>
+
+
+    <script>
+
+        /*
+        ========================================================
+        GITHUB PHOTO GALLERY
+        ========================================================
+
+        Repository:
+        andyhorridge / v12-vantage.co.uk
+
+        Photos:
+        photos/photo001.jpeg
+        photos/photo002.jpeg
+        etc.
+
+        Future numbered photos are automatically detected.
+        ========================================================
+        */
+
+
+        const repoOwner = "andyhorridge";
+        const repoName = "v12-vantage.co.uk";
+
+
+        async function loadGallery() {
+
+            try {
+
+                const response = await fetch(
+                    `https://api.github.com/repos/${repoOwner}/${repoName}/contents/photos`
+                );
+
+
+                if (!response.ok) {
+
+                    throw new Error(
+                        "Unable to read photos folder"
+                    );
+
+                }
+
+
+                const files =
+                    await response.json();
+
+
+                const photos =
+                    files
+
+                    .filter(file => {
+
+                        return /^photo\d+\.(jpg|jpeg|png|webp)$/i
+                            .test(file.name);
+
+                    })
+
+                    .sort((a, b) => {
+
+                        const numberA =
+                            parseInt(
+                                a.name.match(/\d+/)[0],
+                                10
+                            );
+
+                        const numberB =
+                            parseInt(
+                                b.name.match(/\d+/)[0],
+                                10
+                            );
+
+                        return numberA - numberB;
+
+                    });
+
+
+                photos.forEach(photo => {
+
+
+                    const number =
+                        parseInt(
+                            photo.name.match(/\d+/)[0],
+                            10
+                        );
+
+
+                    let gallery;
+
+
+                    /*
+                    =================================================
+                    PHOTO SECTIONS
+                    =================================================
+
+                    photo001
+                    August 2015 purchase day
+
+                    photo004
+                    April 2021 Bamford Rose manifold
+
+                    photo008 onwards
+                    later/detailing photographs
+                    =================================================
+                    */
+
+
+                    if (number === 1) {
+
+                        gallery =
+                            document.getElementById(
+                                "gallery-2015"
+                            );
+
+                    }
+
+
+                    else if (number === 4) {
+
+                        gallery =
+                            document.getElementById(
+                                "gallery-2021"
+                            );
+
+                    }
+
+
+                    else if (number >= 8) {
+
+                        gallery =
+                            document.getElementById(
+                                "gallery-detailing"
+                            );
+
+                    }
+
+
+                    else {
+
+                        gallery =
+                            document.getElementById(
+                                "gallery-years"
+                            );
+
+                    }
+
+
+                    const item =
+                        document.createElement(
+                            "div"
+                        );
+
+                    item.className =
+                        "gallery-item";
+
+
+                    const image =
+                        document.createElement(
+                            "img"
+                        );
+
+
+                    image.src =
+                        `photos/${photo.name}`;
+
+                    image.alt =
+                        "Aston Martin V12 Vantage";
+
+                    image.loading =
+                        "lazy";
+
+                    image.decoding =
+                        "async";
+
+
+                    item.appendChild(
+                        image
+                    );
+
+
+                    gallery.appendChild(
+                        item
+                    );
+
+
+                    item.addEventListener(
+                        "click",
+                        () => {
+
+                            openLightbox(
+                                `photos/${photo.name}`
+                            );
+
+                        }
+                    );
+
+
+                });
+
+
+                removeEmptySections();
+
+
+            }
+
+            catch (error) {
+
+                console.error(
+                    "Gallery error:",
+                    error
+                );
+
+            }
+
+        }
+
+
+        /* =============================================
+           REMOVE EMPTY SECTIONS
+           ============================================= */
+
+        function removeEmptySections() {
+
+            document
+                .querySelectorAll(
+                    ".gallery-grid"
+                )
+                .forEach(gallery => {
+
+                    if (
+                        gallery.children.length === 0
+                    ) {
+
+                        gallery
+                            .closest(
+                                ".history-section"
+                            )
+                            .style.display =
+                                "none";
+
+                    }
+
+                });
+
+        }
+
+
+        /* =============================================
+           LIGHTBOX
+           ============================================= */
+
+        const lightbox =
+            document.getElementById(
+                "lightbox"
+            );
+
+        const lightboxImage =
+            document.getElementById(
+                "lightbox-image"
+            );
+
+        const closeButton =
+            document.getElementById(
+                "lightbox-close"
+            );
+
+
+        function openLightbox(src) {
+
+            lightboxImage.src =
+                src;
+
+            lightbox.classList.add(
+                "active"
+            );
+
+            lightbox.setAttribute(
+                "aria-hidden",
+                "false"
+            );
+
+            document.body.classList.add(
+                "no-scroll"
+            );
+
+        }
+
+
+        function closeLightbox() {
+
+            lightbox.classList.remove(
+                "active"
+            );
+
+            lightbox.setAttribute(
+                "aria-hidden",
+                "true"
+            );
+
+            document.body.classList.remove(
+                "no-scroll"
+            );
+
+            lightboxImage.src =
+                "";
+
+        }
+
+
+        closeButton.addEventListener(
+            "click",
+            closeLightbox
+        );
+
+
+        lightbox.addEventListener(
+            "click",
+            event => {
+
+                if (
+                    event.target === lightbox
+                ) {
+
+                    closeLightbox();
+
+                }
+
+            }
+        );
+
+
+        document.addEventListener(
+            "keydown",
+            event => {
+
+                if (
+                    event.key === "Escape"
+                ) {
+
+                    closeLightbox();
+
+                }
+
+            }
+        );
+
+
+        /* =============================================
+           START
+           ============================================= */
+
+        loadGallery();
+
+    </script>
 
 
 </body>
